@@ -20,7 +20,7 @@ describe(`Given an authenticated user`, () => {
         title: "My test note",
         body: "Hello this is the note body",
       };
-      let result = await we_invoke_createNote(idToken, body);
+      let result = await we_invoke_createNote({ idToken, body });
       expect(result.statusCode).toEqual(201);
       expect(result.body).not.toBeNull();
     });
