@@ -41,3 +41,10 @@ exports.we_invoke_updateNote = (options) => {
   let response = makeHttpRequest("notes", "PUT", options);
   return response;
 };
+
+exports.we_invoke_deleteNote = (options) => {
+    let response = makeHttpRequest("notes", "DELETE", options);
+    return response;
+  };
+
+
